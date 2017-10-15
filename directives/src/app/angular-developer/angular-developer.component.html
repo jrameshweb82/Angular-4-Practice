@@ -1,0 +1,17 @@
+<div>
+<h2 >List Of Best Angular Developers....</h2>
+<ul style="list-style-type: none">
+  <li *ngFor="let angularDev of AngularPerson">
+    {{angularDev}}<br>
+  </li>
+</ul>
+</div>
+<div>
+  <span [ngSwitch] = "BestAngular">
+    <span *ngSwitchCase = "'Siva'">Siva is the Best Angular Developer</span>
+    <span *ngSwitchCase = "'Ramesh'">Ramesh is the Best Angular Developer</span>
+    <span *ngSwitchCase = "'Karthi'">Karthi is the Best Angular Developer</span>
+    <span *ngSwitchCase = "'naveen'">naveen is the Best Angular Developer</span>
+    <span *ngSwitchDefault>No one</span>
+  </span>
+</div>
