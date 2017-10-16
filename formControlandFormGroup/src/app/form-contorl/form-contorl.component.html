@@ -1,2 +1,16 @@
 
-<label>Name: </label><input type="text" >
+<div><label>Simple Bind: </label><input type="text" [formControl]="inputBind" >
+
+{{inputBind.value}}
+</div>
+
+
+<div>
+<label>Listner (see console): </label><input type="text" [formControl]="inputListner" >
+</div>  
+
+<div *ngFor="let name of inputListerArray">
+  {{name}}
+</div>
+
+
